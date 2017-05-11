@@ -1,0 +1,4 @@
+xxd -b -s 000b7710 -l 357584 log
+
+/* Deobfuscate Manually */
+https://www.youtube.com/watch?v=y3s48uD7bG8
