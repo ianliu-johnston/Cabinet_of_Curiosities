@@ -1,6 +1,9 @@
 # Collection of Malware for Security Analysis.
 In the spirit of open source security analysis, and a safer internet, I am providing a repository for malware I have been collecting. Please be responsible, this collection is for security analysis only.
 
+My honey pot is here: http://174.138.84.65/ 
+* Note: My personal website also gets a good amount of malicious traffic, but is not designed as a honeypot.
+
 ## Storage + Safety
 The Malware themselves are stored in TAR archives, and are not executable. Then I add them to an encrypted zip archive.
 
