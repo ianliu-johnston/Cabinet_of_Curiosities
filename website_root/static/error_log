@@ -1,0 +1,8 @@
+
+Server is now running
+{ [Error: listen EADDRINUSE 174.138.84.65:8924]
+  code: 'EADDRINUSE',
+  errno: 'EADDRINUSE',
+  syscall: 'listen',
+  address: '174.138.84.65',
+  port: 8924 }

@@ -1,0 +1,34 @@
+[02-Jun-2016 21:53:13 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_field() in /srv/www/carla/wp-content/themes/carla/templates/header.php:4
+Stack trace:
+#0 /srv/www/carla/wp-includes/template.php(574): require()
+#1 /srv/www/carla/wp-includes/template.php(531): load_template('/srv/www/carla/...', false)
+#2 /srv/www/carla/wp-includes/general-template.php(167): locate_template(Array, true, false)
+#3 /srv/www/carla/wp-content/themes/carla/base.php(19): get_template_part('templates/heade...')
+#4 /srv/www/carla/wp-includes/template-loader.php(75): include('/srv/www/carla/...')
+#5 /srv/www/carla/wp-blog-header.php(19): require_once('/srv/www/carla/...')
+#6 /srv/www/carla/index.php(17): require('/srv/www/carla/...')
+#7 {main}
+  thrown in /srv/www/carla/wp-content/themes/carla/templates/header.php on line 4
+[02-Jun-2016 21:53:15 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_field() in /srv/www/carla/wp-content/themes/carla/templates/header.php:4
+Stack trace:
+#0 /srv/www/carla/wp-includes/template.php(574): require()
+#1 /srv/www/carla/wp-includes/template.php(531): load_template('/srv/www/carla/...', false)
+#2 /srv/www/carla/wp-includes/general-template.php(167): locate_template(Array, true, false)
+#3 /srv/www/carla/wp-content/themes/carla/base.php(19): get_template_part('templates/heade...')
+#4 /srv/www/carla/wp-includes/template-loader.php(75): include('/srv/www/carla/...')
+#5 /srv/www/carla/wp-blog-header.php(19): require_once('/srv/www/carla/...')
+#6 /srv/www/carla/index.php(17): require('/srv/www/carla/...')
+#7 {main}
+  thrown in /srv/www/carla/wp-content/themes/carla/templates/header.php on line 4
+[02-Jun-2016 21:53:18 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_field() in /srv/www/carla/wp-content/themes/carla/templates/header.php:4
+Stack trace:
+#0 /srv/www/carla/wp-includes/template.php(574): require()
+#1 /srv/www/carla/wp-includes/template.php(531): load_template('/srv/www/carla/...', false)
+#2 /srv/www/carla/wp-includes/general-template.php(167): locate_template(Array, true, false)
+#3 /srv/www/carla/wp-content/themes/carla/base.php(19): get_template_part('templates/heade...')
+#4 /srv/www/carla/wp-includes/template-loader.php(75): include('/srv/www/carla/...')
+#5 /srv/www/carla/wp-blog-header.php(19): require_once('/srv/www/carla/...')
+#6 /srv/www/carla/index.php(17): require('/srv/www/carla/...')
+#7 {main}
+  thrown in /srv/www/carla/wp-content/themes/carla/templates/header.php on line 4
+[02-Jun-2016 21:54:21 UTC] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; WP_Import has a deprecated constructor in /srv/www/carla/wp-content/plugins/wordpress-importer/wordpress-importer.php on line 38

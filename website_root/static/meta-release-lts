@@ -1,0 +1,10 @@
+Dist: hardy 
+Name: Hardy Heron
+Version: 8.04.1 LTS
+Date: Thu, 24 Apr 2008 12:00:00 UTC
+Supported: 0
+Description: This is the 8.04.1 LTS release
+Release-File: http://archive.ubuntu.com/ubuntu/dists/hardy/Release
+ReleaseNotes: http://changelogs.ubuntu.com/EOLReleaseAnnouncement
+UpgradeTool: http://archive.ubuntu.com/ubuntu/dists/hardy-proposed/main/dist-upgrader-all/0.87.31/hardy.tar.gz
+UpgradeToolSignature: http://archive.ubuntu.com/ubuntu/dists/hardy-proposed/main/dist-upgrader-all/0.87.31/hardy.tar.gz.gpg

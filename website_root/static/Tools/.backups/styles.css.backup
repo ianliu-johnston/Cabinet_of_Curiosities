@@ -1,0 +1,147 @@
+/*Structure*/
+html, body{
+  height: 100%;
+}
+body{
+  background: #001024 !important;
+}
+header{
+  background: #000;
+}
+main{
+  position: absolute;
+  width: 100%;
+  height: 80%;
+}
+article{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+footer{
+  background: #000;
+  bottom: 15px;
+}
+.footer{
+  background: #000;
+}
+
+@media (max-width: 800px) {
+  body.works_on_smartphone {
+  	display: block;
+  }
+  body.works_on_smartphone main {
+  	display: block;
+  }
+  header .right {
+  	float: none;
+  }
+}
+/*Typography*/
+a, button {
+  text-decoration: none;
+  -webkit-transition:300ms ease;
+  -moz-transition:300ms ease;
+  -o-transition:300ms ease;
+  transition: 300ms ease;
+}
+h1,h2,h3,h4,h5,h6,
+p,a,em,strong,i,b {
+  color: #efefef;
+  text-align: center;
+  font-family: "Myriad Pro", sans-serif;
+  letter-spacing: 2.1px;
+}
+div{
+  text-align: center;
+}
+a:hover{
+  text-decoration: none;
+}
+em:hover{
+  color: #428bca;
+
+}
+
+/*End Typography*/
+/*Custom ID's*/
+#logo{
+  background: #001024;
+}
+#logo a:hover{
+  background: #001024;
+  color: white;
+}
+
+#mainContent{
+  text-align: center;
+  display: block;
+  margin: 1em;
+}
+
+.hidden{
+  display: hidden;
+}
+
+/*Footer*/
+#author {
+  text-align: center;
+  color: #efefef;
+  margin: 5px;
+}
+#author a{
+  color: #efefef;
+}
+#author a:hover{
+  color: #0066ff;
+}
+
+/*Custom Id's and classes for tools*/
+#description{
+  color: #ababab;
+}
+/*Quotes Machine*/
+#quoteButton{
+  margin: 1em;
+  float: right;
+}
+#tweet {
+  margin: 1em;
+  float: left;
+}
+/*Calculator */
+#calculatorTool {
+  background: #000;
+  border-radius: 1em;
+  padding-top: 0.1em;
+  margin: 0 auto;
+  height: 575px;
+  width: 400px;
+  color: #efefef;
+  text-align: center;
+  font-family: "Myriad Pro", sans-serif;
+  letter-spacing: 2.1px;
+  box-shadow: 10px 10px #333;
+}
+#calculatorTool button{
+  font-size: 1.3em;
+  box-shadow: 3px 3px #333;
+}
+#calculatorTool button:hover{
+  box-shadow: 1px 1px #333;
+}
+#calcOutput{
+  background: #001024;
+  padding: 0.2em 1em;
+  border-left: 1em solid #000;
+  border-right: 1em solid #000;
+  font-size: 1.5em;
+  overflow-x: hidden;
+}
+
+.btn-sq {
+  margin: 5px 0;
+  width: 75px !important;
+  height: 75px !important;
+  font-size: 10px;
+}

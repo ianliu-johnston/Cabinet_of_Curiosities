@@ -1,0 +1,77 @@
+var searchOffset = 0;
+  //gets user values
+    var getUserIn = function() {
+        return document.getElementById("userSearch").value.trim();
+  };
+    var prevUserIn = getUserIn;
+      var count = 0;
+        var $htmlbody = $("html, body");
+  var $window = $(window);
+    var wikiResults = document.getElementById("wikipediaContent");
+      $("#toTop").click(function() {
+          $("html, body").animate({
+        scrollTop: 0
+    }, "slow");
+        return false;
+  });
+
+    function findWikiPage() { //Main Function
+        var usin = getUserIn();
+    $.ajax({
+          url: 'https://crossorigin.me/https://en.wikipedia.org/w/api.php',
+        data: {
+        action: 'query',
+        list: 'search',
+        srsearch: usin,
+        srprop: 'snippet',
+        srlimit: 15,
+        sroffset: searchOffset,
+        format: 'json'
+      },
+            datatype: 'jsonp',
+          success: function(x) {
+          wikiResults.innerHTML += "<br>Results: " + (searchOffset + 1) + " / " + x.query.searchinfo.totalhits;
+          var searchResults = x.query.search;
+          for (var i = 0; i < searchResults.length; i++) {
+            wikiResults.innerHTML += "<div class=\"resultSegments\"> <h3>" + searchResults[i].title + "</h3> " + searchResults[i].snippet + "<p><a href=\"http://en.wikipedia.org/wiki/" + searchResults[i].title + "\" target=\"_blank\">Visit the whole page on Wikipedia.org.</a></p></div>";
+              count++;
+              }
+              wikiResults.innerHTML += "<p id=\"a" + count + "\"></p><button class=\"btn btn-primary getMoreResults\" ><h3>Load More?</h3></button>";
+              var moreResults = document.getElementsByClassName('getMoreResults');
+              for (var i = 0; i < moreResults.length; i++) {
+                moreResults[i].addEventListener("click", function() {
+            searchOffset += 15;
+                findWikiPage();
+          });
+          }
+        }
+    });
+        if (count > 1) {
+      var whereTo = $("#a" + count).position().top;
+            $htmlbody.animate({
+            scrollTop: whereTo
+          }, "slow");
+      }
+        } //END Main Function
+
+  document.getElementById("searchPressed").addEventListener("click", function() {
+      if (prevUserIn == getUserIn) {
+            wikiResults.innerHTML = ""; //resets
+          searchOffset = 0; //reset
+        findWikiPage();
+    } else {
+          findWikiPage();
+      }
+        }); //Captures Search Icon Clicks.
+  document.getElementById("userSearch").addEventListener("keydown", function(n) {
+      if (n.keyCode == 13) {
+            if (prevUserIn == getUserIn) {
+            wikiResults.innerHTML = ""; //reset
+            searchOffset = 0; //reset
+            findWikiPage();
+          } else {
+          findWikiPage();
+        }
+    }
+      }); //Captures "Enter" Key.
+
